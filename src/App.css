@@ -8,8 +8,6 @@
   font-size: calc(10px + 2vmin);
 }
 
-/* ! cehat 0 behafel sitmqifhelakfme 0se ldper WHITE BUS D LSEFT GRENE GRYA SEDNA AFEKM ADIEM FAEF 14june 0ce0 FIT TWITHEC HWORSEL FIE MOYN ELSEIAE WAMKTE EYAR AKLFMEKF mA drma worka TEIM jasenk elageuaf ealfmak  smekyl lse hifek mlda ifelse  lkmaeflmekaf  */
-
 .checkmark__circle {
   stroke-dasharray: 166;
   stroke-dashoffset: 166;
@@ -44,7 +42,7 @@
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0;
-    /* wihtou THIS NEUT outlei ncircle form rihgt to bmoe i let eoco meplte iwhtie secoe empti ptoe om fill fomr otudie i sheaerh green chmhmk */
+    /* outside circle/border */
   }
 }
 
@@ -53,17 +51,15 @@
   100% {
     transform: none;
   }
-
   50% {
     transform: scale3d(1.1, 1.1, 1);
-    /* makeu kdien ssalce atthe nim cirlfe mhmh wtf heart beat hmhm kidna fkme @@@@ */
+    /* heart beat effect */
   }
 }
 
 @keyframes fill {
   100% {
     box-shadow: inset 0px 0px 0px 30px #4ade80;
-    /* ETO CENTER MAKEI i nis isnibei  whte cheakmre orh z0bhra fahn wkfme  */
-    /* NO hwoe borede gdoeto eitpeo form osutoe eot fill in how hfz eitutt elk 100 ihwo wtf notriasi tie lw ho HOW  */
+    /* center */
   }
 }
