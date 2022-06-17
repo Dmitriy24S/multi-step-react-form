@@ -2,10 +2,11 @@ import { useContext } from "react";
 import { AppContext, AppContextType } from "../../App";
 
 const Details = () => {
-  const { userData, handleChange } = useContext(AppContext) as AppContextType;
+  const { register, errors } = useContext(AppContext) as AppContextType;
 
   return (
     <>
+      {/* Address */}
       <label htmlFor="address">Address</label>
       <input
         autoFocus
@@ -13,22 +14,25 @@ const Details = () => {
         type="text"
         id="address"
         className="border border-gray-300 rounded-md py-2 px-4 mb-4"
-        value={userData?.address || ""}
-        onChange={handleChange}
         name="address"
+        {...register("address")}
       />
+      {errors.address && (
+        <p className="form-message mb-5 -mt-4">{errors.address?.message}</p>
+      )}
+      {/* City */}
       <label htmlFor="city">City</label>
       <input
         placeholder="City"
         type="city"
         id="city"
-        minLength={4}
-        required
         className="border border-gray-300 rounded-md py-2 px-4"
-        value={userData?.city || ""}
-        onChange={handleChange}
         name="city"
+        {...register("city")}
       />
+      {errors.city && (
+        <p className="form-message mb-5">{errors.city?.message}</p>
+      )}
     </>
   );
 };

@@ -63,3 +63,12 @@
     /* center */
   }
 }
+
+/* form error message */
+.form-message {
+  color: #bf1650;
+}
+.form-message::before {
+  display: inline;
+  content: "⚠ ";
+}
