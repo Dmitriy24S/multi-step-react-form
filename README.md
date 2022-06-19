@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Multistep React Form
+
+![Design preview for Multistep React Form](./design/preview.png)
+
+## Welcome 
+
+Multistep React Form. Created with React & Tailwind CSS.
+
+[Live Demo](https://dmitriy24s.github.io/multi-step-react-form/) 👈
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
